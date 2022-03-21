@@ -48,10 +48,11 @@ const Card = () => {
 
   return (
     <>
-    <div className = "mx-auto max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow-md sm:p-6 lg:p-8">
+    <div className = "mx-auto max-w-sm rounded-lg border border-gray-500 bg-white p-4 shadow-md sm:p-6 lg:p-8">
       <form className = "space-y-6" onSubmit = {createLink}>
-      <svg
-            xmlns="http://www.w3.org/2000/svg"
+        <div className = "mx-auto h-6 w-6">₹</div>
+      {/* <svg
+            xmlns="http://www.w3.org/1000/svg"
             className="mx-auto h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
@@ -63,7 +64,7 @@ const Card = () => {
               strokeWidth={2}
               d="M9 8h6m-5 0a3 3 0 110 6H9l3 3m-3-6h6m6 1a9 9 0 11-18 0 9 9 0 0118 0z"
             />
-          </svg>
+          </svg> */}
           <h5 className="text-xl font-medium text-gray-900">
             Create sharable UPI payment links
           </h5>
@@ -132,7 +133,7 @@ const Card = () => {
       </form>
       <ToastContainer/>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   )
 }

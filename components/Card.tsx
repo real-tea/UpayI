@@ -19,7 +19,7 @@ const Card = () => {
 
     const message = e.target.message.value; 
 
-    let link = `https://https://upayi-real-tea.vercel.app/${upi}`;
+    let link = `https://upayi-real-tea.vercel.app/${upi}`;
 
     if(amount){
       link += `?amount=${amount}`;

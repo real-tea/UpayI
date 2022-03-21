@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 // import { ToastContainer, toast } from 'react-toastify';
-
+import Card from '../components/Card';
 
 const Home: NextPage = () => {
   
@@ -33,7 +33,9 @@ const Home: NextPage = () => {
 
     </Head>
         <div className = "h-screen w-full content-center overflow-y-clip bg-gradient-to-r from-purple-400 to-yellow-400">
-          <div className = "py-14 px-2 sm:py-36"></div>
+          <div className = "py-14 px-2 sm:py-36">
+            <Card/>
+          </div>
         </div>
     </>
   )

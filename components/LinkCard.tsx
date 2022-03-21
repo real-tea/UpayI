@@ -1,11 +1,21 @@
 import QRCode from 'react-qr-code';
+import Link from 'next/link';
+import Footer from './Footer';
+import { ToastContainer } from 'react-toastify';
+import { useState } from 'react';
 
 // @ts-ignore
 const LinkCard = ({upi_data}) => {
     const {upi_id , amount, message} = upi_data;
 
-    let base_link = `upi:`
+    let base_link = `upi://pay?pa=${upi_id}&pn=upayi-real-tea.vercel.app&cu=INR`
 
+    if(amount){
+        base_link += `&am=${amount}`
+    }
+    if(message){
+        base_link += `&tn=${encodeURIComponent(message)}`
+    }
   return (
     <>
     <div className="mx-auto max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow-md sm:p-6 lg:p-8">

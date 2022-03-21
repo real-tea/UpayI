@@ -19,7 +19,31 @@ const Card = () => {
 
     const message = e.target.message.value; 
 
-    let link = `https`
+    let link = `https://https://upayi-real-tea.vercel.app/${upi}`;
+
+    if(amount){
+      link += `?amount=${amount}`;
+    }
+
+    if(message){
+      if(link.includes("?")){
+        link += `&message=${encodeURIComponent(message)}`
+      }else{
+        link += `?message=${encodeURIComponent(message)}`
+      }
+    }
+
+    navigator.clipboard.writeText(link);
+    toast.success('🎉 Link Copied to Clipboard', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
+
   }
 
   return (

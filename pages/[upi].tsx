@@ -64,3 +64,5 @@ const PayPage : NextPage = ({upi_data})=>{
         </>
     )
 }
+
+export default PayPage;

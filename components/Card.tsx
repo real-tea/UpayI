@@ -75,6 +75,7 @@ const Card = () => {
               Your UPI ID
             </label>
             <input
+              autoComplete="off"
               type="text"
               name="upi"
               id="upi"

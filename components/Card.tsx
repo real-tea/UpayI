@@ -4,7 +4,6 @@ import { ToastContainer , toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import Footer from './Footer';
 
-
 const Card = () => {
 
   const createLink = (e : FormEvent) => {

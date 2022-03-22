@@ -2,11 +2,13 @@ import QRCode from 'react-qr-code';
 import Link from 'next/link';
 import Footer from './Footer';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css'
 import { useState } from 'react';
 
 // @ts-ignore
 const LinkCard = ({upi_data}) => {
     const {upi_id , amount, message} = upi_data;
+    // console.log(amount);
 
     let base_link = `upi://pay?pa=${upi_id}&pn=upayi-mu.vercel.app&cu=INR`
 

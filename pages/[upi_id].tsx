@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 import LinkCard from "../components/LinkCard";
+import Card from "../components/Card";
 
 
 // @ts-ignore 
@@ -19,7 +20,7 @@ const PayPage : NextPage = ({upi_data})=>{
         <>
         <Head>
         <title>UPayI</title>
-        <meta name="title" content="UPay" />
+        <meta name="title" content="UPayI" />
         <meta
           name="description"
           content={
@@ -58,6 +59,8 @@ const PayPage : NextPage = ({upi_data})=>{
       <div className="h-screen w-full content-center overflow-y-clip bg-gradient-to-r from-purple-400 to-yellow-400">
         <div className="py-14 px-2 sm:py-36">
           <LinkCard upi_data={upi_data} />
+          {/* <Card upi_data = {upi_data}/> */}
+          
         </div>
       </div>
         

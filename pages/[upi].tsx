@@ -30,7 +30,7 @@ const PayPage : NextPage = ({upi_data})=>{
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://upayi-mu.vercel.app/" />
         <meta property="og:title" content="UPayI" />
         <meta
           property="og:description"
@@ -40,10 +40,10 @@ const PayPage : NextPage = ({upi_data})=>{
               : `Generate shareable UPI payment links`
           }
         />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://upayi-mu.vercel.app/card.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="" />
+        <meta property="twitter:url" content="https://upayi-mu.vercel.app/" />
         <meta property="twitter:title" content="UPayI" />
         <meta
           property="twitter:description"
@@ -53,7 +53,7 @@ const PayPage : NextPage = ({upi_data})=>{
               : `Generate shareable UPI payment links`
           }
         />
-        <meta property="twitter:image" content="" />
+        <meta property="twitter:image" content="https://upayi-mu.vercel.app/card.png" />
       </Head>
       <div className="h-screen w-full content-center overflow-y-clip bg-gradient-to-r from-purple-400 to-yellow-400">
         <div className="py-14 px-2 sm:py-36">

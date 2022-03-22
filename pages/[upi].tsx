@@ -53,9 +53,9 @@ const PayPage : NextPage = ({upi_data})=>{
               : `Generate shareable UPI payment links`
           }
         />
-        <meta property="twitter:image" content="https://upay.cf/card.png" />
+        <meta property="twitter:image" content="" />
       </Head>
-      <div className="h-screen w-full content-center overflow-y-clip bg-gradient-to-br from-teal-600 to-blue-600">
+      <div className="h-screen w-full content-center overflow-y-clip bg-gradient-to-r from-purple-400 to-yellow-400">
         <div className="py-14 px-2 sm:py-36">
           <LinkCard upi_data={upi_data} />
         </div>

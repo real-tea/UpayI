@@ -8,7 +8,7 @@ import { useState } from 'react';
 const LinkCard = ({upi_data}) => {
     const {upi_id , amount, message} = upi_data;
 
-    let base_link = `upi://pay?pa=${upi_id}&pn=upayi-real-tea.vercel.app&cu=INR`
+    let base_link = `upi://pay?pa=${upi_id}&pn=upayi-mu.vercel.app&cu=INR`
 
     if(amount){
         base_link += `&am=${amount}`

@@ -2,7 +2,7 @@
 import { FormEvent } from 'react';
 import { ToastContainer , toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 
 const Card = () => {
@@ -19,7 +19,7 @@ const Card = () => {
 
     const message = e.target.message.value; 
 
-    let link = `https://upayi-real-tea.vercel.app/${upi}`;
+    let link = `https://upayi-mu.vercel.app/${upi}`;
 
     if(amount){
       link += `?amount=${amount}`;
